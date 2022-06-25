@@ -20,7 +20,6 @@ body {
 /* Sidebar section */
 .sidebar {
     color: white;
-    border: 3px solid black;
     background-color: rgb(66, 23, 134);
     display: flex;
     flex-direction: column;
