@@ -30,22 +30,36 @@ body {
 .sidebar-logo {
     border: 2px solid aqua;
     margin-left: 6%;
+    margin-top: 4%;
+    padding: 3%;
     font-size: 1.5rem;
+    text-align: center;
 
 }
 
 .sidebar-top-categories {
     font-size: 1.2rem;
-    margin-top: 50%;
+    margin-top: 30%;
     margin-left: 6%;
+    padding: 4%;
+    text-align: center;
     border: 2px solid yellow;
+}
+
+.sidebar-top-categories>p {
+    margin-top: 4%;
 }
 
 .sidebar-bottom-categories {
     font-size: 1.2rem;
     margin-top: 30%;
     margin-left: 6%;
+    text-align: center;
     border: 2px solid rgb(83, 213, 83)
+}
+
+.sidebar-bottom-categories>p {
+    margin-top: 4%;
 }
 
 /* Header section */
@@ -54,6 +68,21 @@ body {
     grid-template-columns: 3fr 1fr;
     border: 2px solid blue
 }
+
+input[type=text] {
+    border: none;
+    background-color: #e7e5e4;
+    width: 50%;
+    border-radius: 30px;
+    margin: 1.5%;
+    margin-left: 10%;
+    padding: 0.8%;
+}
+
+input:focus {
+    outline: none;
+}
+
 
 /* Projects section */
 .main-content-container {
@@ -70,6 +99,11 @@ body {
     grid-area: 1 / 1 / -1 / 3
 }
 
+.project-header {
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+}
+
 .projects-left {
     border: 4px solid purple;
     grid-area: 2 / 1 / -1 / 2;
@@ -82,14 +116,35 @@ body {
 
 .project {
     border: 2px solid lime;
+    margin: 10%;
+    padding: 8%;
 }
 
-
+/* Announcements section */
 .announcements-container {
+    border: 4px solid yellow;
     grid-area: 1 / 3 / 2 / 4;
 }
 
+.announcements-header {
+    margin-top: 4.2%;
+    margin-left: 3%;
+}
 
+.announcements-content {
+    border: 2px solid lawngreen;
+    margin: 3%;
+    padding: 3%;
+}
+
+.announcement {
+    border: 2px solid black;
+    padding: 3%;
+    margin: 1%;
+}
+
+/* Trending section */
 .trending-container {
+    border: 4px solid brown;
     grid-area: 2 / 3 / -1 / 4;
 }
