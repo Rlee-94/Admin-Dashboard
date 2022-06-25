@@ -11,14 +11,17 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1.1fr 4fr;
-    grid-template-rows: 2fr 4fr;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 /* Sidebar section */
 .sidebar {
+    color: white;
     border: 3px solid black;
-    background-color: blueviolet;
+    background-color: rgb(66, 23, 134);
     display: flex;
     flex-direction: column;
     grid-area: 1 / 1 / -1 / 2;
@@ -48,15 +51,22 @@ body {
 /* Header section */
 .header-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     border: 2px solid blue
 }
 
 /* Projects section */
-.projects-container {
+.main-content-container {
     background-color: antiquewhite;
     display: grid;
-    grid-template-columns: repeat();
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .projects-left {
@@ -69,4 +79,14 @@ body {
 
 .project {
     border: 2px solid lime;
+}
+
+
+.announcements-container {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+
+.trending-container {
+    grid-area: 2 / 3 / -1 / 4;
 }
