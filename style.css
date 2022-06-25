@@ -28,38 +28,60 @@ body {
 }
 
 .sidebar-logo {
-    border: 2px solid aqua;
+    display: flex;
+    align-items: center;
     margin-left: 6%;
     margin-top: 4%;
     padding: 3%;
     font-size: 1.5rem;
-    text-align: center;
+}
 
+.sidebar-logo>h3 {
+    margin-left: 3%;
 }
 
 .sidebar-top-categories {
     font-size: 1.2rem;
-    margin-top: 30%;
+    margin-top: 10%;
     margin-left: 6%;
     padding: 4%;
-    text-align: center;
-    border: 2px solid yellow;
 }
 
-.sidebar-top-categories>p {
+.sidebar-top-categories>div {
+    display: flex;
     margin-top: 4%;
+}
+
+.sidebar-top-categories>div>p {
+    margin-left: 5%
+}
+
+.sidebar-top-categories>div>p:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 .sidebar-bottom-categories {
     font-size: 1.2rem;
-    margin-top: 30%;
+    margin-top: 10%;
     margin-left: 6%;
-    text-align: center;
-    border: 2px solid rgb(83, 213, 83)
+    padding: 4%;
 }
 
-.sidebar-bottom-categories>p {
+.sidebar-bottom-categories>div {
+    display: flex;
     margin-top: 4%;
+}
+
+.sidebar-bottom-categories>div>p {
+    margin-left: 5%;
+}
+
+.sidebar-bottom-categories>div>p:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 /* Header section */
