@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.1fr 4fr;
+    grid-template-rows: 2fr 4fr;
+}
+
+/* Sidebar section */
+.sidebar {
+    border: 3px solid black;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+.sidebar-logo {
+    border: 2px solid aqua;
+    margin-left: 6%;
+    font-size: 1.5rem;
+
+}
+
+.sidebar-top-categories {
+    font-size: 1.2rem;
+    margin-top: 50%;
+    margin-left: 6%;
+    border: 2px solid yellow;
+}
+
+.sidebar-bottom-categories {
+    font-size: 1.2rem;
+    margin-top: 30%;
+    margin-left: 6%;
+    border: 2px solid rgb(83, 213, 83)
+}
+
+/* Header section */
+.header-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid blue
+}
+
+/* Projects section */
+.projects-container {
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat();
+}
+
+.projects-left {
+    border: 4px solid purple;
+}
+
+.projects-right {
+    border: 4px solid red;
+}
+
+.project {
+    border: 2px solid lime;
+}
