@@ -20,7 +20,7 @@ body {
 /* Sidebar section */
 .sidebar {
     color: white;
-    background-color: rgb(66, 23, 134);
+    background-color: #cd1a1a;
     display: flex;
     flex-direction: column;
     grid-area: 1 / 1 / -1 / 2;
@@ -37,6 +37,15 @@ body {
 
 .sidebar-logo>h3 {
     margin-left: 3%;
+}
+
+.sidebar-logo>h3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sidebar-logo>h3:active {
+    transform: translateY(2px)
 }
 
 .sidebar-top-categories {
@@ -87,16 +96,23 @@ body {
 .header-section {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    border: 2px solid blue
+}
+
+.search-bar>img:hover {
+    cursor: pointer;
+}
+
+.search-bar>img:active {
+    transform: translateY(2px)
 }
 
 input[type=text] {
     border: none;
     background-color: #e7e5e4;
-    width: 50%;
+    width: 55%;
     border-radius: 30px;
-    margin: 1.5%;
-    margin-left: 10%;
+    margin-top: 1.5%;
+    margin-left: 2%;
     padding: 0.8%;
 }
 
@@ -104,10 +120,26 @@ input:focus {
     outline: none;
 }
 
+.search-bar {
+    display: flex;
+    margin-left: 10%;
+}
+
+.profile-container {
+    margin-top: 3%;
+    display: flex;
+    padding-left: 5%;
+}
+
+.profile-greeting {
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
 
 /* Projects section */
 .main-content-container {
-    background-color: antiquewhite;
+    background-color: #e7e5e4;
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -121,7 +153,7 @@ input:focus {
 }
 
 .project-header {
-    margin-top: 2.5%;
+    margin-top: 5.5%;
     margin-left: 2.5%;
 }
 
@@ -137,6 +169,8 @@ input:focus {
 
 .project {
     border: 2px solid lime;
+    background-color: white;
+    border-radius: 8px;
     margin: 10%;
     padding: 8%;
 }
@@ -159,7 +193,7 @@ input:focus {
 }
 
 .announcement {
-    border: 2px solid black;
+    border-bottom: 0.5px solid black;
     padding: 3%;
     margin: 1%;
 }
