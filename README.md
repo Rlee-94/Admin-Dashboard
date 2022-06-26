@@ -2,7 +2,7 @@
 
 Project to create dashboard using GRID and Flex.
 
-🔗 **Live preview:** [here]
+🔗 **Live preview:** [here](https://rlee-94.github.io/Admin-Dashboard/)
 
 ## Built with
 
