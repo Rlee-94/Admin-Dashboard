@@ -178,6 +178,7 @@ input:focus {
 .profile-name>h4:hover {
     cursor: pointer;
     transform: scale(1.1);
+    text-decoration: underline;
 }
 
 .profile-name>.notifications-bell {
@@ -237,7 +238,7 @@ input:focus {
 
 .project>h4:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 .project>p {
@@ -295,7 +296,7 @@ input:focus {
 
 .announcement>h4:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 .announcement>p {
