@@ -132,6 +132,11 @@ input:focus {
     padding-left: 5%;
 }
 
+.profile-container>img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .profile-greeting {
     margin-top: 3%;
     margin-left: 2%;
@@ -170,10 +175,19 @@ input:focus {
     margin-left: 4%;
 }
 
+.profile-name>h4:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .profile-name>.notifications-bell {
     padding: 6%;
 }
 
+.profile-name>img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 /* Projects section */
 .main-content-container {
@@ -221,6 +235,11 @@ input:focus {
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.project>h4:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .project>p {
     font-weight: 200;
     font-size: 0.8rem;
@@ -266,13 +285,23 @@ input:focus {
 
 .announcement {
     border-bottom: 0.5px solid black;
-    padding: 3%;
+    padding: 5%;
     margin: 1%;
+}
+
+.announcement>h4 {
+    margin-bottom: 1.5%;
+}
+
+.announcement>h4:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .announcement>p {
     font-weight: 200;
     font-size: 0.8rem;
+    margin-bottom: 4%;
 }
 
 
@@ -328,4 +357,5 @@ input:focus {
 
 .user:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
